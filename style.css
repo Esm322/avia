@@ -1,1 +1,18 @@
-
+body{
+    background: #F3F7FA;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    padding: 50px 0 0 0;
+}
+.form{
+    position: relative;
+    z-index: 1;
+}
+.plane{
+    position: relative;
+    z-index: 2;
+    left: -65px;
+    top: -6px;
+}
