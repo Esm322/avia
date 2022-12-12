@@ -42,11 +42,7 @@ body{
     grid-gap: 20px;
     justify-content: center;
 }
-.right-bar{
-    display: flex;
-    flex-direction: column;
-    grid-gap: 20px;
-}
+
 .filter{
     width: 232px;
     height: 254px;
@@ -124,4 +120,52 @@ label{
 }
 .original-check:checked + .custom-check::before{
     transform: translate(-50%, -50%) scale(1);
+}
+.right-bar{
+    display: flex;
+    flex-direction: column;
+    grid-gap: 20px;
+    width: 502px;
+    
+}
+.tabs-price{
+    display: flex;
+}
+.tab-filter{
+    width: 168px;
+    height: 50px;
+    font-family: "OpenSans SemiBold";
+    background: #ffffff;
+    color: #4A4A4A;
+    cursor: url(screens/Cursor.svg), pointer;
+}
+.first-butt{
+    border-top: 1px solid #DFE5EC;
+    border-bottom: 1px solid #DFE5EC;
+    border-left: 1px solid #DFE5EC;
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+}
+.second-butt{
+    border: 1px solid #DFE5EC;
+}
+.third-butt{
+    border-top: 1px solid #DFE5EC;
+    border-bottom: 1px solid #DFE5EC;
+    border-right: 1px solid #DFE5EC;
+    border-left: none;
+    border-radius: 0 5px 5px 0;
+}
+.tab-filter:hover{
+    background: #2196F3;
+    color: #ffffff;
+    border: none;
+}
+.tab-active{
+    background: #2196F3;
+    color: #ffffff;
+    border: none;
+}
+.tab-active-noborder{
+    border: none;
 }
