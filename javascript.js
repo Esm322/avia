@@ -6,3 +6,12 @@ buttons.forEach((button) => {
         button.classList.add('tab-active')
     })
 })
+
+let borders = document.querySelector('.second-butt');
+
+borders.forEach((border) => {
+    border.addEventListener('click', () =>{
+        borders.forEach((border) => border.classList.remove('.tab-active-noborder'));
+        border.classList.add('tab-active-noborder')
+    })
+})
